@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alina Selega</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Alina Selega</h1>
+        </div>
+    </header>
+
+    <div class="banner">
+    <div class="container">
+            <a href="index.html">About Me</a>
+            <a href="research.html">Research</a>
+            <a href="publications.html">Publications</a>
+    </div>
+    </div>
+
+    <section id="profile">
+        <div class="container">
+            <img src="picture.jpg" alt="Alina Selega" class="profile-pic">
+        </div>
+        <div class="container">
+            <a href="https://scholar.google.ca/citations?user=tpG4CaIAAAAJ&hl=en&oi=ao">Google Scholar</a>
+            <a href="https://github.com/alinaselega">GitHub</a>
+            <a href="https://www.linkedin.com/in/alina-selega-753860235/">LinkedIn</a>
+            <a href="https://openreview.net/profile?id=~Alina_Selega1">OpenReview</a>
+        </div>
+
+    </section>
+
+    <section id="Research">
+        <div class="container">
+        <h2>Research</h2>
+
+        <h3>Postdoctoral research</h3>
+        <b>Lunenfeld-Tanenbaum Research Institute, Vector Institute (with Kieran Campbell) 2021 - </b><br>
+        <p> 
+        <i> Learning the effects of copy number variation on transcriptional states in cancer</i><br>
+            I am working on an adversarial variational autoencoder model to learn copy number-dependent and -independent cell states in cancer. The model is based on conditional subspace variational autoencoders, where each cell’s expression profile is represented as two latent embeddings, one of which represents variation associated with copy number and one that does not. Our aim is to investigate the interplay between the learnt states and involved gene pathways, known clinical subtypes, and the tumour microenvironment across different cancer types. <br>
+        </p>
+
+        <p>
+        <i>Multi-view modeling of imaging mass cytometry data with variational autoencoders</i><br>
+            I am working with Shanza Ayub on using a multi-view variational autoencoder model to learn novel cell states occurring in cancer from imaging mass cytometry data. This model incorporates single-cell protein expression, morphology, and spatial relationships information to resolve distinct cell subtypes that cannot be recovered from clustering by expression alone. <br>
+        </p>
+
+        <p> 
+        <i>Multi-objective Bayesian optimization for biomedical pipelines</i><br>
+            I developed a novel multi-objective Bayesian optimization method for scenarios where not all objectives may be informative. This often arises in the analysis of biomedical data, where ground truth is unavailable and heuristics are used to measure the quality of results. My method uses pre-defined criteria for desirable properties of objectives (e.g. low noise or agreement with other objectives) to infer which objectives are useful and returns Pareto optimal solutions maximizing those. We showed that our method performed better than others in optimizing hyperparameters of clustering tasks for imaging mass cytometry and CITE-seq data. This work was published in <i>Transactions on Machine Learning</i>. <br>
+       </p>
+
+        <p>
+        <i>Predicting dataset-specific single-cell RNA-seq pipeline performance</i><br>
+            I worked with Cindy Fang on an autoML approach for selecting pipelines for given scRNA-seq datasets. We created a large dataset of pipeline performance by exhaustively applying pipelines with different hyperaparameter configurations to ~90 public scRNA-seq datasets and quantifying the quality of results with a suite of measures. We then trained supervised models to predict success measures using dataset and pipeline characteristics as features and found significantly better than random performance on unseen datasets. This work is preprinted on <i>biorXiv</i> and our dataset is freely available.<br>
+        </p>
+
+        <b>University of Toronto, Vector Insitute (with Quaid Morris) 2019 - 2021</b><br>
+        <p>
+        <i>Inferring copy number aberrations from single-cell RNA-seq data</i><br>
+            I worked on a method to map copy number profile in cell populations from tumour scRNA-seq data, correcting for known covariates and unknown variation. I developed a novel extension of optimal segmentation to multinomial likelihood and combined it with gradient optimization to fit copy number profiles for each subpopulation. The method iterated between subclone clustering given current CNA estimates and a segmentation step given current estimates of cluster assignments.<br>
+        </p>
+
+        <p>
+        <i>Subclonal reconstruction using mutation signatures and allele frequencies</i><br>
+            I worked with Caitlin Harrigan on an extension of Tracksig, a method for modeling mutation signatures in cancer. Tracksig orders mutations on a pseudo-timeline and partitions it into regions with constant proportions of mutations generated by pre-defined mutation signatures using an optimal segmentation method. In our extension, we modify the cost function used for segmentation to additionally include information about variant allele frequencies, allowing us to detect cell populations with similar signature activities but different mutation frequencies. This work was published in <i>PSB</i>.<br>
+        </p>
+
+        <h3>Doctoral thesis, University of Edinburgh (with Guido Sanguinetti) 2014 - 2018</h3>
+        <p>
+        <i>Statistical pipeline for the analysis of RNA structure probing data</i><br>
+            I developed a machine learning method for inferring nucleotide-level structural state of a transcript from high-throughput sequencing data of an RNA structure probing experiment. The main idea was to use multiple control replicates to quantify variability of the measured reverse transciptase drop-off signal that could occur by chance. The treatment signal at each nucleotude was compared to this null distribution and modelled with a hidden Markov model, generating probabilities that a nucleotide was in an unstructured state. This work was published in <i>Nature Methods</i> and we showed that our method (released as a Bioconductor package) was more sensitive and generated high confidence predictions at lower sequencing depths that others.<br>
+        </p>
+
+        <p>
+        <i> Identifying changes in RNA-protein binding dynamics between conditions with Gaussian process models</i><br>
+            This work was a part of a collaborative project with the Granneman lab to measure RNA-protein binding dynamics of yeast transcription termination factor in response to glucose starvation, published in <i>Nature Communications</i>. I developed a model selection method based on Gaussian processes to model RNA-protein binding time-seires. This allowed us to find transcripts that exhibited significant changes in protein binding in response to nutritional stress.<br>
+        </p>
+
+        <p>
+        <i>Modeling dynamics of RNA abundance using time-resolved RNA-protein binding data</i><br>
+            I collaborated with David Schnoerr to work on a dynamical model for RNA in stress conditions modeling abundance via contributions of only three proteins involved in RNA synthesis and decay, using experimental RNA-protein binding time-series data.<br>
+        </p>
+
+        <h3>Other research</h3>
+        <b>Centre for Integrative Biology, University of Trento (with Alessandro Quattrone) 2015 - 2016</b><br>
+        <p>
+            This work was a part of the project investigating translational impairment in amyotrophic lateral sclerosis, which I did as a visiting researcher during my PhD in collaboration with Toma Tebaldi. I performed exploratory analysis using population-specific expression analysis (PSEA) on the data from total and polysomal RNA isolated from spinal cords of pre- and post-symptomatic mice. This analysis accounted for different cell type composition between samples which was important due to degenerative changes associated with the disease phenotype.<br>
+        </p>
+        
+        <b>MRC Cognition and Sciences Unit, Amgen Scholars Programme (with Nikolaus Kriegeskorte) 2012</b><br>
+        <p>
+            I was an Amgen Scholar at Cambridge University working on a summer research project in collaboration with Linda Henriksson. The aim of the project was to study spatial layout representations in human brain via fMRI experiments targeting parahippocampal place area which responds to images of scenes and places. I used 3D computer graphics software Blender to generate a set of stimuli to be used in these experiments. Generated images depicted indoor scenes with one of the planes (e.g. wall, floor, ceiling) apprearing dark or missing to test a hypothesis that each plane constraining a scene is represented in the brain. This work was later published in <i>Neuron</i>.<br>
+        </p> 
+    </section>
